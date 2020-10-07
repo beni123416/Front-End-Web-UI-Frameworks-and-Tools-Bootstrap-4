@@ -8,9 +8,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
-  "author": "",
+  "author": "Benny Rubinstien",
   "license": "ISC",
-    "devDependencies": {
-    "lite-server": "^2.3.0"
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beni123416/test2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beni123416/test2/issues"
+  },
+  "homepage": "https://github.com/beni123416/test2#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
 }
