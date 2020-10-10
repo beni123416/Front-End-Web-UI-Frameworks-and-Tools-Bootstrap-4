@@ -65,3 +65,24 @@ body{
     left: 0;
     min-height: 300px;
 }
+#dateInfo i{ 
+    position: absolute; 
+    left: -3px;
+    top: 9px;
+    color: gray; 
+}
+#dateInfo{ 
+    position: relative; 
+} 
+#timeInfo i{ 
+    position: absolute; 
+    left: -3px;
+    top: 11px;
+    color: gray; 
+}
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}

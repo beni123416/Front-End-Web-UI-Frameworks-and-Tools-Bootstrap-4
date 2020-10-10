@@ -126,10 +126,12 @@
                         </div>
                         <div class="form-group row">
                         <label for="dateTime" class="col-md-2 col-form-label">Date and Time</label>
-                        <div class="col-5 col-md-3">
+                        <div class="col-5 col-md-3" id="dateInfo">
                             <input type="info" class="form-control" id="date" name="date" placeholder="Date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
-                        <div class="col-7 col-md-4">
+                        <div class="col-7 col-md-4" id="timeInfo">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
                             <input type="info" class="form-control" id="Time" name="Time" placeholder="Time">
                         </div>
                         </div>
@@ -205,6 +207,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -271,9 +281,6 @@
                 
             </div>
         </div>
-        <div class="col-12" id="reserveTable">
-            <h3 id="hReserveTable">Reserve a Table</h3>
-        </div>
     <footer class="footer" >
         <div class="container">
             <div class="row">             
@@ -319,7 +326,18 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--Script using jqueary for the tooltip in the jumbtroon-->
+    <!--pause and play carousel buttons-->
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 
 </body>
 
