@@ -67,13 +67,3 @@ body {
   left: -3px;
   top: 11px;
   color: gray; }
-
-.modal .modal-header {
-  background: #2c5894;
-  color: floralwhite; }
-
-.modal .modal-body {
-  background: #70e1f5; }
-
-.modal .close {
-  color: #70e1f5; }
